@@ -8,17 +8,11 @@
 import SwiftUI
 
 struct ContentView: View {
+	@State private var showingAlert = false
+	
 	var body: some View {
-		VStack {
-			Button {
-				print("Button was tapped")
-			} label: {
-				Text("Tap me!")
-					.padding()
-					.foregroundColor(.white)
-					.background(.red)
-			}
-		}
+		Text("Hello World")
+			.padding()
 	}
 }
 
