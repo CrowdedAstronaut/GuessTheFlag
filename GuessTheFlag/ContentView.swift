@@ -12,9 +12,11 @@ struct ContentView: View {
 	@State private var questionCounter = 1
 	@State private var showingResults = false
 	@State private var scoreTitle = ""
-	@State private var countries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"].shuffled()
+	@State private var countries = allCountries.shuffled()
 	@State private var correctAnswer = Int.random(in: 0...2)
 	@State private var score = 0
+	
+	static let allCountries = ["Estonia", "France", "Germany", "Ireland", "Italy", "Nigeria", "Poland", "Russia", "Spain", "UK", "US"]
 	
 	var body: some View {
 		ZStack{
@@ -103,6 +105,7 @@ struct ContentView: View {
 		}
 	}
 	func askQuestion() {
+		countries.remove(at: correctAnswer)
 		countries.shuffle()
 		correctAnswer = Int.random(in: 0...2)
 		questionCounter += 1
@@ -110,6 +113,7 @@ struct ContentView: View {
 	func newGame(){
 		questionCounter = 0
 		score = 0
+		countries = Self.allCountries
 		askQuestion()
 	}
 }
