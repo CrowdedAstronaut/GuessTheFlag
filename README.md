@@ -47,7 +47,7 @@ Users should be able to:
 
 ### Mobile Preview
 
-![Mobile Preview]()
+![Mobile Preview](https://github.com/CrowdedAstronaut/GuessTheFlag/raw/main/gifs/guess_the_flag_preview.gif)
 
 # Technologies <a name="technologies"></a>
 
