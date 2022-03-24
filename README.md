@@ -69,7 +69,7 @@ Users should be able to:
 
 ## What I learned <a name="learning"></a>
 
-This was my first project in SwiftUI, and it tested basic SwiftUI functionality: stacks, buttons, images, alerts, asset catalogs, and more. This exercise also illustrated the efficiency of SwiftUI: the entire application (including the styling) is 94 lines of code!
+This was my second project in SwiftUI, and it tested basic SwiftUI functionality: stacks, buttons, images, alerts, asset catalogs, and more. This exercise also illustrated the efficiency of SwiftUI: the entire application (including the styling) is 94 lines of code!
 
 ## Author <a name="author"></a>
 
