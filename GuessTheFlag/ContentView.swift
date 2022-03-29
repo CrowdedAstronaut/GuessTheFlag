@@ -48,6 +48,8 @@ struct ContentView: View {
 						} label: {
 							FlagImage(name: countries[number])
 								.rotation3DEffect(.degrees(selectedFlag == number ? 360 : 0), axis: (x: 0, y: 1, z: 0))
+								.opacity(selectedFlag == -1 || selectedFlag == number ? 1.0 : 0.25)
+
 								.animation(.default, value: selectedFlag)
 						}
 					}
