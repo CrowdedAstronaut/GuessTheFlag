@@ -48,8 +48,8 @@ struct ContentView: View {
 						} label: {
 							FlagImage(name: countries[number])
 								.rotation3DEffect(.degrees(selectedFlag == number ? 360 : 0), axis: (x: 0, y: 1, z: 0))
-								.opacity(selectedFlag == -1 || selectedFlag == number ? 1.0 : 0.25)
-
+//								.opacity(selectedFlag == -1 || selectedFlag == number ? 1.0 : 0.25)
+								.saturation(selectedFlag == -1 || selectedFlag == number ? 1 : 0)
 								.animation(.default, value: selectedFlag)
 						}
 					}
@@ -114,6 +114,7 @@ struct ContentView: View {
 		countries.shuffle()
 		correctAnswer = Int.random(in: 0...2)
 		questionCounter += 1
+		selectedFlag = -1
 	}
 	func newGame(){
 		questionCounter = 0
