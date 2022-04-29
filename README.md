@@ -1,7 +1,5 @@
 # GuessTheFlag - 100 days of SwiftUI solution
 
-# Frontend Mentor - NFT preview card component solution
-
 - Solution URL: [Git Repo](https://github.com/CrowdedAstronaut/GuessTheFlag)
 
 This is a solution to the [Guess the flag challenge on 100 days of SwiftUI](https://www.hackingwithswift.com/100/swiftui/20).
